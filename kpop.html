@@ -40,6 +40,35 @@
 		.soos{
 			display: flex;
 		}
+
+		.sooman{
+			width:150px;
+			height: 150px;
+			background: url('./images/leesooman.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			border:0.5 solid #999;
+			float: left;
+			margin-right: 20px;
+		}
+
+		.gosmbtn:hover{
+			box-shadow:0px 5px 5px #631f26;
+		}
+
+
+		iframe{
+			/*border:3px solid rgba(209,75,127,1.00);*/
+			box-shadow:5px 5px 10px #222;
+		}
+
+		.pronct:hover{
+			box-shadow:0px 5px 10px #000;
+		}
+
+		.bgs{
+			background-color: #ed0eaa;
+		}
 		
     	/*sm end*/
 
@@ -75,9 +104,9 @@
 					<a href="#other" class="nav-link text-white mx-3 dropdown-toggle" data-bs-toggle="dropdown">Other Entertainment</a>
 					<ul class="dropdown-menu">
 						<li><a href="#" class="dropdown-item"><i class="fa-solid fa-music"></i> Zarli Entertainment</a></li>
-						<li><a href="#" class="dropdown-item"><i class="fa-solid fa-music-note"></i> Mawmaw Entertainment</a></li>
-						<li><a href="#" class="dropdown-item"><i class="fa-solid fa-microphone"></i> Tinwin Entertainment</a></li>
-						<li><a href="#" class="dropdown-item"><i class="fa-solid fa-message-music"></i> AyeNyeinKhin Entertainment</a></li>
+						<li><a href="#" class="dropdown-item"><i class="fa-solid fa-music"></i>  Mawmaw Entertainment</a></li>
+						<li><a href="#" class="dropdown-item"><i class="fa-solid fa-music"></i>  Tinwin Entertainment</a></li>
+						<li><a href="#" class="dropdown-item"><i class="fa-solid fa-music"></i>  AyeNyeinKhin Entertainment</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -130,134 +159,193 @@
 
 			<br/>
 
-			<div>
-				<li class="col-12" style="display:inline;">Soo Man Lee is a CEO of SM Entertainment.Since its establishment in 1995, SM Entertainment has pioneered the entertainment industry in Korea and is a total entertainment group leading the global Korean Wave and K-POP sensation....</li>
-				<a href="https://www.smentertainment.com/" class="btn btn-outline-danger m-3">Go to SM Town</a>
+			<div class="mb-5">
+				<div class="sooman"></div>
+				<div>
+					<li class="col-12" style="display:inline;"><span class="h4" style="color: hsla(310, 73%, 64%, 0.91);">Soo Man Lee </span> is a CEO of SM Entertainment.Since its establishment in 1995, SM Entertainment has pioneered the entertainment industry in Korea and is a total entertainment group leading the global Korean Wave and K-POP sensation....</li>
+					<a href="https://www.smentertainment.com/" class="btn btn-outline-danger m-3 gosmbtn">Go to SM Town</a>
+				</div>
 			</div>
 
 			<hr/>
 
 			<div>
-			<h2 style="text-decoration: underline;" class="display-1 text-underline text-center text-secondary">Our Artists</h2>
-			<div class="row">
-				<div class="col-md-3 my-3">
-					<div class="card">
-						<div class="card header">
-							<h4>TVXQ</h4>
+				<h2 style="text-decoration: underline;" class="display-1 text-underline text-center text-secondary">Our Artists</h2>
+				<div class="row">
+					<div class="col-md-3 my-3">
+						<div class="card">
+							<div class="card header">
+								<h4>TVXQ</h4>
+							</div>
+							<img src="./images/tvxq.jpg" >
+							<div class="card body">
+								<p>TVXQ (stylized as TVXQ!), an initialism for Tong Vfang Xien Qi[2] (	Chinese: 東方神起), is a South Korean male pop duo consisting of U-Know Yunho and Max Changmin. They are known as Tohoshinki (東方神起, Tōhōshinki) in Japanese releases, and are sometimes referred to as DBSK,..</p>
+							</div>
+							<div class="card footer">
+								<a href="https://en.wikipedia.org/wiki/TVXQ" class="btn btn-primary">Read More</a>
+							</div>
 						</div>
-						<img src="./images/tvxq.jpg" >
-						<div class="card body">
-							<p>TVXQ (stylized as TVXQ!), an initialism for Tong Vfang Xien Qi[2] (Chinese: 東方神起), is a South Korean male pop duo consisting of U-Know Yunho and Max Changmin. They are known as Tohoshinki (東方神起, Tōhōshinki) in Japanese releases, and are sometimes referred to as DBSK,..</p>
+					</div>
+					<div class="col-md-3 my-3">
+						<div class="card">
+							<div class="card header">
+								<h4>SuperJunior</h4>
+							</div>
+							<img src="./images/suju.jpg" >
+							<div class="card body">
+								<p>Also known as SJ or SuJu, is a South Korean boy band formed by Lee Soo-man, the founder of SM Entertainment in 2005Also known as SJ or SuJu, is a South Korean boy band formed by Lee Soo-man, the founder of SM Entertainment in 2005...</p>
+							</div>
+							<div class="card footer">
+								<a href="https://en.wikipedia.org/wiki/Super_Junior" class="btn btn-primary">Read More</a>
+							</div>
 						</div>
-						<div class="card footer">
-							<a href="https://en.wikipedia.org/wiki/TVXQ" class="btn btn-primary">Read More</a>
+					</div>
+					<div class="col-md-3 my-3">
+						<div class="card">
+							<div class="card header">
+								<h4>Girls'Generation</h4>
+							</div>
+							<img src="./images/snsd.jpg" >
+							<div class="card body">
+								<p>Girls' Generation (Korean: 소녀시대; RR: Sonyeo Sidae), also known as SNSD, is a South Korean girl group formed by SM Entertainment. The group is composed of eight members: Taeyeon, Sunny, Tiffany, Hyoyeon, Yuri, Sooyoung, Yoona, and Seohyun...</p>
+							</div>
+							<div class="card footer">
+								<a href="https://en.wikipedia.org/wiki/Girls%27_Generation" class="btn btn-primary">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 my-3">
+						<div class="card">
+							<div class="card header">
+								<h4>Shinee</h4>
+							</div>
+							<img src="./images/shinee.jpg" >
+							<div class="card body">
+								<p>Shinee (/ˈʃaɪniː/ SHY-nee; Korean: 샤이니, romanized: Syaini; Japanese: 	シャイニー, romanized: Shainī; stylized as SHINee) is a South Korean boy band formed by SM Entertainment in 2008. The group's musical impact in their native country has earned them numerous accolades and the title "Princes of K-pop" ...</p>
+							</div>
+							<div class="card footer">
+								<a href="https://en.wikipedia.org/wiki/Shinee" class="btn btn-primary">Read More</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 my-3">
-					<div class="card">
-						<div class="card header">
-							<h4>SuperJunior</h4>
-						</div>
-						<img src="./images/suju.jpg" >
-						<div class="card body">
-							<p>Super Junior (Korean: 슈퍼주니어; RR: Syupeo Junieo; stylized in all caps), also known as SJ or SuJu, is a South Korean boy band formed by Lee Soo-man, the founder of SM Entertainment in 2005...</p>
-						</div>
-						<div class="card footer">
-							<a href="https://en.wikipedia.org/wiki/Super_Junior" class="btn btn-primary">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 my-3">
-					<div class="card">
-						<div class="card header">
-							<h4>Girls'Generation</h4>
-						</div>
-						<img src="./images/snsd.jpg" >
-						<div class="card body">
-							<p>Girls' Generation (Korean: 소녀시대; RR: Sonyeo Sidae), also known as SNSD, is a South Korean girl group formed by SM Entertainment. The group is composed of eight members: Taeyeon, Sunny, Tiffany, Hyoyeon, Yuri, Sooyoung, Yoona, and Seohyun...</p>
-						</div>
-						<div class="card footer">
-							<a href="https://en.wikipedia.org/wiki/Girls%27_Generation" class="btn btn-primary">Read More</a>
+
+				<div class="row">
+
+					<div class="col-md-3 my-3">
+						<div class="card">
+							<div class="card header">
+								<h4>EXO</h4>
+							</div>
+							<img src="./images/exo.jpg" >
+							<div class="card body">
+								<p>Exo (Korean: 엑소; stylized in all caps) is a South Korean-Chinese boy 	band based in Seoul that was formed by SM Entertainment in 2011 and debuted in 2012. The group consists of nine members: Xiumin, Suho, Lay, Baekhyun, Chen, Kris, Luhan, Tao, Chanyeol, D.O., Kai and Sehun..</p>
+							</div>
+							<div class="card footer">
+								<a href="https://en.wikipedia.org/wiki/Exo" class="btn btn-primary">Read More</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 my-3">
-					<div class="card">
-						<div class="card header">
-							<h4>Shinee</h4>
-						</div>
-						<img src="./images/shinee.jpg" >
-						<div class="card body">
-							<p>Shinee (/ˈʃaɪniː/ SHY-nee; Korean: 샤이니, romanized: Syaini; Japanese: シャイニー, romanized: Shainī; stylized as SHINee) is a South Korean boy band formed by SM Entertainment in 2008. The group's musical impact in their native country has earned them numerous accolades and the title "Princes of K-pop" ...</p>
-						</div>
-						<div class="card footer">
-							<a href="https://en.wikipedia.org/wiki/Shinee" class="btn btn-primary">Read More</a>
+					<div class="col-md-3 my-3">
+						<div class="card">
+							<div class="card header">
+								<h4>RedVelvet</h4>
+							</div>
+							<img src="./images/redvelvet.png" >
+							<div class="card body">
+								<p>Red Velvet (Korean: 레드벨벳; romanized: Ledeubelbes; Japanese: レッドベルベット; romanized: Reddoberubetto) is a South Korean girl group formed and managed by SM Entertainment. They originally debuted on August 1, 2014, with the single "Happiness" with the four-member line-up of Irene, Seulgi, Wendy and Joy. A fifth member, Yeri, joined the group in March 2015...</p>
+							</div>
+							<div class="card footer">
+								<a href="https://en.wikipedia.org/wiki/Exo" class="btn btn-primary">Read More</a>
+							</div>
 						</div>
 					</div>
+					<div class="col-md-3 my-3">
+						<div class="card">
+							<div class="card header">
+								<h4>NCT</h4>
+							</div>
+							<img src="./images/nct.jpg" >
+							<div class="card body">
+								<p>NCT (Korean: 엔시티; an acronym for Neo Culture Technology) is a South Korean boy band formed by SM Entertainment and introduced in January 2016. The group consists of 23 members as of April 2021, ranging in age from late teens to mid-twenties and divided into four different sub-units[NCT 127, NCT Dream, NCT U , WayV] ...</p>
+							</div>
+							<div class="card footer">
+								<a href="https://en.wikipedia.org/wiki/NCT_(group)" class="btn btn-primary">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 my-3">
+						<div class="card">
+							<div class="card header">
+								<h4>Aespa</h4>
+							</div>
+							<img src="./images/aespa.jpg" >
+							<div class="card body">
+								<p>Aespa (Korean: 에스파; RR: eseupa; MR: esŭp'a, commonly stylized in all lowercase or æspa) is a South Korean girl group formed ...</p>
+							</div>
+							<div class="card footer">
+								<a href="https://en.wikipedia.org/wiki/Aespa" class="btn btn-primary">Read More</a>
+							</div>
+						</div>
+					</div>
+				
 				</div>
+
 			</div>
 
-			<div class="row">
-				<div class="col-md-3 my-3">
-					<div class="card">
-						<div class="card header">
-							<h4>EXO</h4>
-						</div>
-						<img src="./images/exo.jpg" >
-						<div class="card body">
-							<p>Exo (Korean: 엑소; stylized in all caps) is a South Korean-Chinese boy band based in Seoul that was formed by SM Entertainment in 2011 and debuted in 2012. The group consists of nine members: Xiumin, Suho, Lay, Baekhyun, Chen, Kris, Luhan, Tao, Chanyeol, D.O., Kai and Sehun..</p>
-						</div>
-						<div class="card footer">
-							<a href="https://en.wikipedia.org/wiki/Exo" class="btn btn-primary">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 my-3">
-					<div class="card">
-						<div class="card header">
-							<h4>RedVelvet</h4>
-						</div>
-						<img src="./images/redvelvet.png" >
-						<div class="card body">
-							<p>Red Velvet (Korean: 레드벨벳; romanized: Ledeubelbes; Japanese: レッドベルベット; romanized: Reddoberubetto) is a South Korean girl group formed and managed by SM Entertainment. They originally debuted on August 1, 2014, with the single "Happiness" with the four-member line-up of Irene, Seulgi, Wendy and Joy. A fifth member, Yeri, joined the group in March 2015...</p>
-						</div>
-						<div class="card footer">
-							<a href="https://en.wikipedia.org/wiki/Red_Velvet_(group)" class="btn btn-primary">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 my-3">
-					<div class="card">
-						<div class="card header">
-							<h4>NCT</h4>
-						</div>
-						<img src="./images/nct.jpg" >
-						<div class="card body">
-							<p>NCT (Korean: 엔시티; an acronym for Neo Culture Technology) is a South Korean boy band formed by SM Entertainment and introduced in January 2016. The group consists of 23 members as of April 2021, ranging in age from late teens to mid-twenties and divided into four different sub-units[NCT 127, NCT Dream, NCT U , WayV] ...</p>
-						</div>
-						<div class="card footer">
-							<a href="https://en.wikipedia.org/wiki/NCT_(group)" class="btn btn-primary">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 my-3">
-					<div class="card">
-						<div class="card header">
-							<h4>Aespa</h4>
-						</div>
-						<img src="./images/aespa.jpg" >
-						<div class="card body">
-							<p>Aespa (Korean: 에스파; RR: eseupa; MR: esŭp'a, commonly stylized in all lowercase or æspa) is a South Korean girl group formed ...</p>
-						</div>
-						<div class="card footer">
-							<a href="https://en.wikipedia.org/wiki/Aespa" class="btn btn-primary">Read More</a>
-						</div>
-					</div>
-				</div>
+			<span class="text-uppercase text-secondary display-6">Promotion <i class="fa-solid fa-percent"></i></span><span><a href="#" class="btn btn-outline-secondary text-uppercase m-3 pronct">  Click To Here!!!</a></span>
+			<div class="col-md-6">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/bagFQCTHXy8" title=	"YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
 			</div>
 
+			<br/><br/>
+
+			<div>
+				<h1 class="text-center text-muted">Arrange of Prizing Awards <i class="fa-solid fa-trophy"></i></h1>
+				<div class="col-lg-6 mx-auto">
+					<p class="h5"><i class="fa-solid fa-heart"></i> TVXQ <i class="fa-solid fa-heart"></i></p>
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-primary" style="width:70%"aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+					</div>
+
+					<p class="h5"><i class="fa-solid fa-leaf"></i> SuperJunior <i class="fa-solid fa-leaf"></i></p>
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-danger" style="width:80%"aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+					</div>
+
+					<p class="h5"><i class="fa-solid fa-clover"></i> Girls'Generation <i class="fa-solid fa-clover"></i></p>
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bgs" style="width:95%"aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+					</div>
+
+					<p class="h5"><i class="fa-solid fa-sun"></i> SHinee <i class="fa-solid fa-sun"></i></p>
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-info" style="width:85%"aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+					</div>
+
+					<p class="h5"><i class="fa-solid fa-gem"></i> EXO <i class="fa-solid fa-gem"></i></p>
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-dark" style="width:99.99%"aria-valuenow="99.99" aria-valuemin="0" aria-valuemax="100">99.99%</div>
+					</div>
+
+					<p class="h5"><i class="fa-solid fa-water"></i> RedVelvet <i class="fa-solid fa-water"></i></p>
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-danger" style="width:55%"aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+					</div>
+
+					<p class="h5"><i class="fa-solid fa-greater-than"></i> NCT <i class="fa-solid fa-less-than"></i></p>
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-success" style="width:90%"aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+					</div>
+
+					<p class="h5"><i class="fa-solid fa-4"></i> Aespa <i class="fa-solid fa-4"></i></p>
+					<div class="progress mb-3">
+						<div class="progress-bar progress-bar-striped bg-warning" style="width:35%"aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+					</div>
+
+				</div>
 			</div>
+			
 			
 
 
