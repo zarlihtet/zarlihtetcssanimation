@@ -123,7 +123,7 @@
 
     	#arrowids{
     		position: absolute;
-    		left:25% ;
+    		left:23% ;
     		top: 15%;
     	}
 
@@ -350,11 +350,11 @@
 			</div>
 
 			<span class="text-uppercase text-secondary display-6">Promotion <i class="fa-solid fa-percent"></i></span><span><a href="#" class="btn btn-outline-secondary text-uppercase m-3 pronct">  Click To Here!!!</a></span>
-			<div class="row ">
-				<div class="col-lg-6 ">
+			<div class="row mx-auto">
+				<div class="col-lg-6 col-sm-12">
 					<iframe width="500" height="315" src="https://www.youtube.com/embed/bagFQCTHXy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
 				</div>
-				<div class="col-lg-6 ">
+				<div class="col-lg-6 col-sm-12">
 					<iframe width="500" height="315" src="https://www.youtube.com/embed/2IkoKhr6Tss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
@@ -474,10 +474,10 @@
 			<div>
 				<h4 style="text-decoration:underline;">Promotion Area !!!</h4>
 				<div class="row ">
-					<div class="col-lg-6 ">
+					<div class="col-lg-6 col-sm-12">
 						<iframe width="500" height="315" src="https://www.youtube.com/embed/2bCdVnoztc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="col-lg-6 ">
+					<div class="col-lg-6 col-sm-12">
 						<iframe width="500" height="315" src="https://www.youtube.com/embed/r5n1GCY-nYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -646,10 +646,10 @@
 			<div class="container-fluid">
 				<p class="h1">* Promotion FOR U *</p>
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-sm-12">
 						<iframe width="500" height="315" src="https://www.youtube.com/embed/mAKsZ26SabQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-sm-12">
 						<iframe width="500" height="315" src="https://www.youtube.com/embed/9RUeTYiJCyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -730,7 +730,7 @@
 
 	<!-- Start fontawesome for uparrow -->
 
-		<a href="kpop.html" class="d-flex justify-content-end"><div class=" h1 text-danger m-5 arrows"><i class="fa-solid fa-arrow-up" id="arrowids"></i></div></a>
+		<a href="kpop.html" class="d-flex justify-content-end fixed-bottom"><div class=" h1 text-danger m-5 arrows"><i class="fa-solid fa-arrow-up" id="arrowids"></i></div></a>
 		<hr/><hr/>
 
 	<!-- End fontawesome for uparrow -->
@@ -749,6 +749,18 @@
 		
 		$(document).ready(function(){
 			// console.log("hii");
+
+			$(".arrows").hide();
+
+			$(window).scroll(function(){
+				let getscrolltop = $(this).scrollTop();
+				// console.log(getscrolltop);
+				if(getscrolltop > 300){
+					$(".arrows").show(500);
+				}else{
+					$(".arrows").hide(500);
+				}
+			});
 		})
 
 	</script>
